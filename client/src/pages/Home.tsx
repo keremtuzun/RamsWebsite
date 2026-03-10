@@ -9,7 +9,7 @@ import { ChevronRight, Cpu, Users, Globe, Award, ArrowRight } from "lucide-react
 import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
 
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/hero-robot-bkahc7tXS4xcRpjELDzZYA.webp";
+const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/WhatsAppImage2026-03-10at17.47.52_fd6dacc3.jpeg";
 const ROBOT_CAD_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/robot-cad-XUwV5eL6pNC5hbSy5kmEF3.webp";
 const COMPETITION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/competition-action-Cdqbt5HaniwNwW3LWxrwt7.webp";
 
@@ -66,11 +66,13 @@ export default function Home() {
             </div>
 
             <div className="flex items-start gap-6 mb-6">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/52135199_1023279997878410_4518729955340713984_n_fca10169.jpg"
-                alt="RAMs 7729 Logo"
-                className="w-32 h-32 flex-shrink-0 hidden sm:block"
-              />
+              <div className="w-32 h-32 bg-black rounded flex items-center justify-center flex-shrink-0 hidden sm:flex">
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/52135199_1023279997878410_4518729955340713984_n_fca10169.jpg"
+                  alt="RAMs 7729 Logo"
+                  className="w-28 h-28"
+                />
+              </div>
               <div>
                 <h1
                   className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-none mb-6"

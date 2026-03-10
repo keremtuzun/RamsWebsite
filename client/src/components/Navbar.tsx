@@ -45,11 +45,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/52135199_1023279997878410_4518729955340713984_n_fca10169.jpg"
-              alt="RAMs 7729 Logo"
-              className="w-10 h-10 flex-shrink-0"
-            />
+            <div className="w-10 h-10 bg-black rounded flex items-center justify-center flex-shrink-0">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/52135199_1023279997878410_4518729955340713984_n_fca10169.jpg"
+                alt="RAMs 7729 Logo"
+                className="w-9 h-9"
+              />
+            </div>
           </Link>
 
           {/* Desktop Nav */}
