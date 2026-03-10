@@ -173,14 +173,7 @@ export default function Robot() {
       {/* CAD + Build Process */}
       <section className="py-16 lg:py-24">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <AnimatedSection delay={150}>
-              <img
-                src={CAD_IMG}
-                alt="Robot CAD render with exploded view"
-                className="w-full rounded-lg border border-[oklch(0.28_0.008_260)]"
-              />
-            </AnimatedSection>
+          <div>
             <AnimatedSection>
               <div className="section-label mb-3">Design Process</div>
               <h2
