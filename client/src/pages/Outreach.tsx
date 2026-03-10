@@ -48,16 +48,7 @@ const activities = [
     title: "Koç School Science Fair",
     desc: "Hosted a robotics showcase at the school science fair, demonstrating robot capabilities to students and parents.",
   },
-  {
-    year: "2023",
-    title: "FLL Regional Mentorship",
-    desc: "Mentored three FLL Explore teams through their first season, with all three teams successfully completing their projects.",
-  },
-  {
-    year: "2023",
-    title: "Elementary School Visits",
-    desc: "Visited four elementary schools in the Tuzla district with a portable robot demonstration and coding activity.",
-  },
+
 ];
 
 export default function Outreach() {
@@ -83,21 +74,7 @@ export default function Outreach() {
         </div>
       </section>
 
-      {/* Hero Image */}
-      <section className="pb-16">
-        <div className="container">
-          <AnimatedSection>
-            <div className="relative rounded-xl overflow-hidden border border-[oklch(0.28_0.008_260)]">
-              <img
-                src={OUTREACH_IMG}
-                alt="RAMs 7729 team members mentoring younger students in a STEM workshop"
-                className="w-full h-72 lg:h-80 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.1_0.008_260/0.5)] to-transparent" />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+
 
       {/* Impact Stats */}
       <section className="py-10 bg-[oklch(0.11_0.008_260)] border-y border-[oklch(0.28_0.008_260)]">
@@ -106,7 +83,6 @@ export default function Outreach() {
             {[
               { value: "1000+", label: "Podcast Listeners" },
               { value: "500+", label: "Museum Tour Users" },
-              { value: "4", label: "FLL Teams Mentored" },
               { value: "3+", label: "Partner Schools" },
             ].map((stat, i) => (
               <AnimatedSection key={stat.label} delay={i * 80}>
