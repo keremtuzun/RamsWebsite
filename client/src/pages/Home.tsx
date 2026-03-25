@@ -2,8 +2,7 @@
    RAMs 7729 – Home Page
    Design: Dark Technical Command Center
    Sections: Hero, Pillars, Current Season, Stats, CTA
-   ============================================================ */
-
+============================================================ */
 import { Link } from "wouter";
 import { ChevronRight, Cpu, Users, Globe, Award, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -53,10 +52,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.1_0.008_260/0.92)] via-[oklch(0.1_0.008_260/0.7)] to-[oklch(0.1_0.008_260/0.3)]" />
           <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.14_0.008_260)] via-transparent to-transparent" />
         </div>
-
         {/* Dot grid overlay */}
         <div className="absolute inset-0 dot-grid opacity-20" />
-
         {/* Content */}
         <div className="relative container pt-24 pb-20">
           <div className="max-w-2xl">
@@ -64,7 +61,6 @@ export default function Home() {
               <span className="inline-block w-6 h-px bg-[oklch(0.82_0.18_85)]" />
               FIRST Robotics Competition · Team #7729
             </div>
-
             <div className="flex items-start gap-6 mb-6">
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/403923818_1396815704525545_1507094903593979583_n_615cc946.jpg"
@@ -76,19 +72,16 @@ export default function Home() {
                   className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-none mb-6"
                   style={{ fontFamily: "Rajdhani, sans-serif", letterSpacing: "0.02em" }}
                 >
-                  <span className="text-[oklch(0.82_0.18_85)]">RAMs</span> 7729
-                  <br />
+                  <span className="text-[oklch(0.82_0.18_85)]">RAMs</span> 7729 <br />
                   <span className="text-[oklch(0.94_0.005_65)]">Robotics</span>
                 </h1>
               </div>
             </div>
-
             <p className="text-[oklch(0.75_0.005_65)] text-lg leading-relaxed mb-8 max-w-lg">
-              Designing, building, and programming competition robots from Koç School, Istanbul.
-              Where engineering meets passion.
+              Designing, building, and programming competition robots from Koc School, Istanbul. Where
+              engineering meets passion.
             </p>
           </div>
-
           <div className="flex flex-wrap gap-3">
             <Link href="/robot" className="btn-gold px-6 py-3 rounded flex items-center gap-2 text-sm">
               See Our Robot <ChevronRight className="w-4 h-4" />
@@ -98,7 +91,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
           <div className="w-px h-8 bg-gradient-to-b from-[oklch(0.82_0.18_85)] to-transparent" />
@@ -145,7 +137,6 @@ export default function Home() {
               </h2>
             </div>
           </AnimatedSection>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {pillars.map((pillar, i) => (
               <AnimatedSection key={pillar.title} delay={i * 120}>
@@ -199,8 +190,15 @@ export default function Home() {
                 </Link>
               </div>
             </AnimatedSection>
-
-
+            <AnimatedSection delay={120}>
+              <div className="relative rounded-lg overflow-hidden border border-[oklch(0.28_0.008_260)]">
+                <img
+                  src="/robot-photo.jpg"
+                  alt="RAMs 7729 robot on display"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -218,8 +216,8 @@ export default function Home() {
                 Competing at the <span className="text-[oklch(0.82_0.18_85)]">Highest Level</span>
               </h2>
               <p className="text-[oklch(0.8_0.005_65)] mb-6 text-sm leading-relaxed">
-                From the Bosphorus Regional to international events, RAMs 7729 competes
-                with determination and sportsmanship at every tournament.
+                From the Bosphorus Regional to international events, RAMs 7729 competes with
+                determination and sportsmanship at every tournament.
               </p>
               <Link
                 href="/competitions"
@@ -280,8 +278,8 @@ export default function Home() {
               Ready to Build the Future?
             </h2>
             <p className="text-[oklch(0.6_0.01_260)] max-w-xl mx-auto mb-8 leading-relaxed">
-              Whether you're a student, sponsor, or STEM enthusiast — there's a place for you
-              in the RAMs 7729 community.
+              Whether you're a student, sponsor, or STEM enthusiast — there's a place for you in the
+              RAMs 7729 community.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn-gold px-8 py-3 rounded text-sm">
