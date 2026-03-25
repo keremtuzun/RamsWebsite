@@ -193,9 +193,7 @@ export default function Home() {
             <AnimatedSection delay={120}>
               <div className="relative rounded-lg overflow-hidden border border-[oklch(0.28_0.008_260)]">
                 <img
-                  src="/Screenshot 2026-03-25 123648.png"
-                  alt="RAMs 7729 robot on display"
-                  className="w-full h-auto object-cover"
+                  src="Screenshot 2026-03-25 123648.png"
                 />
               </div>
             </AnimatedSection>
