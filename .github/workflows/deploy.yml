@@ -32,10 +32,10 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build
-        run: npx vite build
+        run: pnpm run build:client
         env:
           NODE_ENV: production
 
