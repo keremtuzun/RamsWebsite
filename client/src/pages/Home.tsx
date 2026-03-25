@@ -10,7 +10,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/WhatsAppImage2026-03-10at17.47.52_fd6dacc3.jpeg";
 const ROBOT_CAD_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/robot-cad-XUwV5eL6pNC5hbSy5kmEF3.webp";
-const COMPETITION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/competition-action-Cdqbt5HaniwNwW3LWxrwt7.webp";
+const COMPETITION_IMG = "https://d2xsxph8kpxj0f.cloudfronth.net/310519663418944140/X4Be2XfiomkNw7gY9gk5Hg/competition-action-Cdqbt5HaniwNwW3LWxrwt7.webp";
 
 const pillars = [
   {
@@ -193,7 +193,7 @@ export default function Home() {
             <AnimatedSection delay={120}>
               <div className="relative rounded-lg overflow-hidden border border-[oklch(0.28_0.008_260)]">
                 <img
-                  src="/robot-photo.jpg"
+                  src={import.meta.env.BASE_URL + "robot-photo.jpg"}
                   alt="RAMs 7729 robot on display"
                   className="w-full h-auto object-cover"
                 />
