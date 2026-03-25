@@ -13,9 +13,12 @@ import Sponsors from "./pages/Sponsors";
 import Outreach from "./pages/Outreach";
 import Contact from "./pages/Contact";
 
+// Strip trailing slash from base path for wouter compatibility
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 function AppRouter() {
   return (
-    <Router base={import.meta.env.BASE_URL}>
+    <Router base={base}>
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
